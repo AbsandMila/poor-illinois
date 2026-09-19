@@ -9,7 +9,7 @@
 /* VARIABLE DU MODE DE BASE (ici clair) */
 :root {
   color-scheme: light;
-  --header: url('https://i.ibb.co/hp5q0s3/HEADER-LIGHT.png');
+  --header: url('https://i.ibb.co/Txb6zYg7/HEADER-LIGHTv3.png');
 
   --neutral: #F3F3F3;
   --neutralDark: #F3F3F3;
@@ -49,7 +49,7 @@
 /* VARIABLES DU MODE INVERSE (ici sombre) */
 [data-color-scheme="dark"] {
   color-scheme: dark;
-  --header: url('https://i.ibb.co/ZpcP0M3x/HEADER-DARK.png');
+  --header: url('https://i.ibb.co/fzPBtfBp/HEADER-DARKv3.png');
 
   --neutral: #1A1A1A;
   --neutralDark: #1A1A1A;
@@ -82,8 +82,6 @@
   box-sizing: border-box;
   /*évite que les éléments soient agrandis par le padding*/
   /* SCROLLBAR CUSTOM POUR MOZILLA */
-  scrollbar-color: var(--contrastLight);
-  scrollbar-width: thin;
 }
 
 html {
@@ -131,7 +129,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   width: 938px;
-  height: 330px;
+  height: 420px;
   display: block;
   transform: translate(-20px, -1px);
   border-bottom: 1px solid var(--outline);
