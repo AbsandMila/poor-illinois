@@ -1,0 +1,506 @@
+/* Fiches RP ----- */
+/* Template 1 */
+.rp_header-one {
+  display: flex;
+  flex-direction: column;
+}
+
+.rp1-line {
+  border: 1px solid var(--outline);
+  border-top: none;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: auto 52px;
+}
+
+.rp1-line sub {
+  padding: 3px 0px 0px 5px;
+}
+
+.rp1-line.first-line {
+  border-top: 1px solid var(--outline);
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.rp1-line span {
+  padding: 0px 0px 9px 13px;
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.rp1-line img {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  height: 52px;
+  width: 52px;
+  object-fit: cover;
+  border-left: 1px solid var(--outline);
+}
+
+.rp_body-one {
+  display: grid;
+  border: 1px solid var(--outline);
+  border-top: none;
+  grid-template-columns: auto 52px;
+}
+
+.rp1-bodypic {
+  grid-column: 2;
+  border-left: 1px solid var(--outline);
+  display: flex;
+  flex-direction: column;
+}
+
+.rp1-bodypic img {
+  height: 52px;
+  width: 51px;
+  border-bottom: 1px solid var(--outline);
+  object-fit: cover;
+}
+
+/* Template 2 */
+
+.rp_header-two {
+  position: relative;
+}
+
+.rp1-bodycntt {
+  grid-column: 1;
+  grid-row: 1;
+  padding: 20px;
+}
+
+.rp2-headerpic {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  z-index: 1;
+  position: relative;
+}
+
+.rp2-headerpic img {
+  height: 72px;
+  width: 72px;
+  object-fit: cover;
+  border: 1px solid var(--outline);
+}
+
+.rp2-headerquote {
+  font-family: var(--mono);
+  text-transform: uppercase;
+  position: absolute;
+  text-align: center;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.rp_body-two {
+  border: 1px solid var(--outline);
+  padding: 20px;
+}
+
+/* POOR CUTES ----- */
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ASCII ----- */
+
+.ascii_drawing {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  margin: 0px auto;
+  font-size: 8px;
+}
+
+.ascii_horse {
+  transform: translate(-25px);
+  
+  .ascii_line-1 {
+    margin-left: 19ch;
+  }
+
+  .ascii_line-2 {
+    margin-left: 18ch;
+  }
+  
+  .ascii_line-3 {
+    margin-left: 16ch;
+  }
+  
+  .ascii_line-4 {
+    margin-left: 16ch;
+  }
+  
+  .ascii_line-5 {
+    margin-left: 8ch;
+  }
+  
+  .ascii_line-6 {
+    margin-left: 5ch;
+  }
+  
+  .ascii_line-7 {
+    margin-left: 0ch;
+  }
+  
+  .ascii_line-8 {
+    margin-left: 1ch;
+  }
+  
+  .ascii_line-9 {
+    margin-left: 10ch;
+  }
+  
+  .ascii_line-10 {
+    margin-left: 12ch;
+  }
+  
+  .ascii_line-11 {
+    margin-left: 14ch;
+  }
+  
+  .ascii_line-12 {
+    margin-left: 17ch;
+  }
+  
+  .ascii_line-13 {
+    margin-left: 20ch;
+  }
+}
+
+/* Template pré-liens ---------- */
+/* Pré-liens de groupe */
+
+.pl_header {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--outline);
+  padding: 10px;
+}
+
+.pl_header-pics {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  height: 72px;
+  border: 1px solid var(--outline);
+  border-top: none;
+}
+
+.pl_blank {
+  position: relative;
+  border-left: 1px solid var(--outline);
+  width: 71px;
+}
+
+.pl_blank::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 1px;
+  transform: rotate(45deg);
+  top: 35px;
+  left: 0px;
+  background: var(--outline);
+}
+
+.pl_header-pics img {
+  border-left: 1px solid var(--outline);
+  height: 71px;
+  width: 71px;
+  object-fit: cover;
+}
+
+.pl_block {
+  border: 1px solid var(--outline);
+  padding: 10px;
+  height: 609px;
+  overflow: auto;
+}
+
+.pl_chara {
+  border: 1px solid var(--outline);
+  display: flex;
+  flex-direction: column;
+}
+
+.pl_chara-title {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid var(--outline);
+}
+
+.pl_chara-title img {
+  height: 72px;
+  width: 72px;
+  border-right: 1px solid var(--outline);
+  objet-fit: cover;
+}
+
+.chara-title_cntt {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.pl_chara-desc {
+  padding: 10px;
+  height: 160px;
+  overflow: auto;
+}
+
+/* Pré-lien unique */
+
+.pl_icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5px;
+  position: relative;
+  z-index: 1;
+}
+
+.pl_icons img {
+  height: 72px;
+  width: 72px;
+  border: 1px solid var(--outline);
+  object-fit: cover;
+}
+
+.pl_quote {
+  position: relative;
+  text-align: center;
+}
+
+.pl_quote sub {
+  line-height: 0.9;
+}
+
+.misprinted {
+  position: absolute;
+  font-family: var(--mono);
+  text-transform: uppercase;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.pl_north {
+  display: flex;
+  flex-direction: row;
+}
+
+.pl_north-cntt {
+  flex-grow: 100;
+  border: 1px solid var(--outline);
+  padding: 20px;
+  height: 486px;
+  overflow: auto;
+}
+
+.pl_north-avatar {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.pl_north-avatar::before {
+  content: "";
+  height: 1px;
+  background: var(--outline);
+  position: absolute;
+  bottom: 67px;
+  width: 220px;
+  transform: rotate(30deg);
+  left: 0px;
+}
+
+.pl_north-avatar img {
+  width: 220px;
+  height: 352px;
+  object-fit: cover;
+  border: 1px solid var(--outline);
+  border-left: none;
+}
+
+.pl_north-avatar::after {
+  content: "";
+  display: block;
+  border-right: 1px solid var(--outline);
+  border-bottom: 1px solid var(--outline);
+  height: 133px;
+}
+
+.pl_south {
+  display: flex;
+  flex-direction: row;
+  height: 352px;
+  border: 1px solid var(--outline);
+  border-top: none;
+}
+
+.pl_south-pics {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--outline);
+  position: relative;
+}
+
+.pl_south-pics::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 120px;
+  transform: rotate(45deg);
+  bottom: 58px;
+  background: var(--outline);
+  left: -2px;
+}
+
+.pl_south-pics img {
+  height: 117px;
+  width: 117px;
+  object-fit: cover;
+  border-bottom: 1px solid var(--outline);
+}
+
+.pl_south-cntt {
+  padding: 20px;
+  height: 351px;
+  overflow: auto;
+}
+
+/* Template journaux ---------- */
+
+.journal_header {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  border: 1px solid var(--outline);
+  padding: 10px;
+}
+
+.journal_header sub {
+  align-content: end;
+}
+
+.journal_header t0 {
+  border-bottom: 1px solid var(--outline);
+  flex-grow: 100;
+}
+
+.journal_sub-head {
+  border: 1px solid var(--outline);
+  border-top: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.journal_sub-head div {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--outline);
+  padding: 10px;
+}
+
+.journal_body {
+  display: grid;
+  grid-template-columns: auto 91px;
+  border: 1px solid var(--outline);
+  border-top: none;
+  height: 365px;
+}
+
+.journal_body-icons {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid var(--outline);
+  position: relative;
+}
+
+.journal_body-icons img {
+  height: 91px;
+  width: 90px;
+  border-bottom: 1px solid var(--outline);
+  object-fit: cover;
+}
+
+.journal_body-icons::after {
+  content: "";
+  display: block;
+  height: 91px;
+  width: 90px;
+}
+
+.journal_body-icons::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 90px;
+  background: var(--outline);
+  transform: rotate(44deg);
+  position: absolute;
+  bottom: 44px;
+}
+
+.journal_body-cntt {
+  height: 365px;
+  overflow: auto;
+  padding: 10px;
+}
+
+.journal_liens {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-left: 1px solid var(--outline);
+}
+
+.journal_liens-fiche {
+  border-right: 1px solid var(--outline);
+  border-bottom: 1px solid var(--outline);
+}
+
+.journal_liens-north {
+  position: relative;
+  border-bottom: 1px solid var(--outline);
+}
+
+.journal_liens-north img {
+  height: 147px;
+  width: 148px;
+  object-fit: cover;
+}
+
+.journal_liens-north span {
+  position: absolute;
+  border-top: 1px solid var(--outline);
+  border-right: 1px solid var(--outline);
+  display: block;
+  bottom: 0px;
+  left: 0px;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+}
+
+.journal_liens-south {
+  text-align: center;
+  padding: 10px 2px;
+}
+
+.journal_chrono {
+  border: 1px solid var(--outline);
+}
+
+.journal_chrono .chrono-grid {
+  max-height: 365px;
+}
